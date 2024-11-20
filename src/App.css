@@ -35,4 +35,60 @@
   to {
     transform: rotate(360deg);
   }
+} 
+
+.BodyContenedor{
+
+  background-color: rgb(44, 41, 41); 
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); 
+  height: 100vh;
+
+} 
+
+.HeaderContenedor{
+  grid-column: 12/13;
+  grid-row: 4/9;
+  background-color: blue; 
+  display: flex;
+
+}  
+
+
+nav{
+
+  background-color: green;
+}
+
+.Store{
+  width: 6rem;
+  background-color: red;
+}
+
+
+.Fotos{
+  width: 6rem;
+  background-color: red;
+}
+
+.Tour{
+  width: 6rem;
+  background-color: red;
+}
+
+
+
+
+li{
+  list-style: none;
+}
+
+
+.RoberLogo{
+  grid-column: 1/3;
+  grid-row: 6/7;
+  width: 8rem;
+  height: 5rem;
+  --rotation-angle: -15deg; /* Variable para el ángulo de rotación */ transform: rotate(var(--rotation-angle));
 }
